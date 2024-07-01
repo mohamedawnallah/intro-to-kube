@@ -1,0 +1,8 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: hello-world-pipelinerun
+  namespace: default
+spec:
+  pipelineRef:
+    name: hello-world-pipeline

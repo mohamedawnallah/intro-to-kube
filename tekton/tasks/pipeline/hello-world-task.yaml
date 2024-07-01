@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: hello-world-task
+  namespace: default
+spec:
+  steps:
+    - name: echo
+      image: alpine
+      script: |
+        echo "Hello, World!"
